@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.activities.SettingsActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/tb_settings_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/toolbar_margin_from_start"
+        android:layout_marginLeft="@dimen/toolbar_margin_from_start"
+        android:layout_marginTop="@dimen/toolbar_margin_from_top"
+        android:background="@color/colorInvisible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.example.scoreup.utils.SUButtonLight
+        android:id="@+id/btn_settings_edit_choices"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/colorInvisible"
+        android:gravity="center_vertical"
+        android:text="@string/edit_choices_settings_text"
+        android:textAllCaps="false"
+        android:textSize="@dimen/text_size_entries"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tb_settings_back" />
+
+    <com.example.scoreup.utils.SUButtonLight
+        android:id="@+id/btn_settings_reminder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:background="@color/colorInvisible"
+        android:gravity="center_vertical"
+        android:text="@string/reminders_settings_text"
+        android:textAllCaps="false"
+        android:textSize="@dimen/text_size_entries"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_settings_edit_choices" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

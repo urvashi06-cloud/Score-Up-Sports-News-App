@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="20dp"
+    android:layout_marginTop="20dp">
+
+    <com.example.scoreup.utils.SUTextViewMedium
+        android:id="@+id/tv_us_sport_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:text="Football"
+        android:textSize="15sp"
+        android:background="@drawable/ic_text_view_sports_name_background"
+        android:paddingHorizontal="10dp"
+        android:paddingVertical="3dp"/>
+
+    <LinearLayout
+        android:id="@+id/ll_items_us_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@id/tv_items_us_starts_at"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_us_sport_name">
+
+        <LinearLayout
+            android:id="@+id/ll_items_us_1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1">
+
+            <com.example.scoreup.utils.SUTextViewBold
+                android:id="@+id/tv_items_us_match_type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:textSize="19sp"
+                tools:text="League Match" />
+
+            <com.example.scoreup.utils.SUTextViewBold
+                android:id="@+id/tv_items_us_teams_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:textSize="16sp"
+                tools:text="A Team VS B Team" />
+
+            <com.example.scoreup.utils.SUTextViewLight
+                android:id="@+id/tv_items_us_location"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                tools:text="Taj Mahal"
+                android:visibility="gone"/>
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/iv_items_us_options"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/options_upcoming_screen"
+            android:src="@drawable/ic_vector_options"/>
+
+    </LinearLayout>
+
+
+    <com.example.scoreup.utils.SUTextViewLightItalic
+        android:id="@+id/tv_items_us_starts_at"
+        android:layout_width="match_parent"
+        android:gravity="start"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:padding="3dp"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ll_items_us_main"
+        tools:text="Starts on: 26/12/2012 4:00:00 IST" />
+</androidx.constraintlayout.widget.ConstraintLayout>

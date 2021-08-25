@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="choices_textSize">23sp</dimen>
+    <dimen name="bottom_margin_each_choice">20dp</dimen>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="nav_header_vertical_spacing">8dp</dimen>
+    <dimen name="nav_header_height">176dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="text_size_entries">18sp</dimen>
+    <dimen name="layout_margin_horizontal_entries">20dp</dimen>
+    <dimen name="button_background_1_radius">20dp</dimen>
+    <dimen name="title_text_size">40sp</dimen>
+    <dimen name="margin_from_title">60dp</dimen>
+    <dimen name="margin_from_other_entries">30dp</dimen>
+    <dimen name="margin_from_end_of_entries">15dp</dimen>
+    <dimen name="btn_text_size_small">16sp</dimen>
+    <dimen name="btn_text_size_medium">20sp</dimen>
+    <dimen name="toolbar_margin_from_top">10dp</dimen>
+    <dimen name="toolbar_margin_from_start">3dp</dimen>
+    <dimen name="margin_from_toolbar">30dp</dimen>
+    <dimen name="title_text_size_choices">30sp</dimen>
+    <dimen name="layout_margin_horizontal_title_fragment">55dp</dimen>
+    <dimen name="margin_top_title_fragment">20dp</dimen>
+    <dimen name="title_fragment_text_size">30sp</dimen>
+    <dimen name="icon_nav_bar">100dp</dimen>
+    <dimen name="title_nav_bar_text_size">25sp</dimen>
+
+</resources>

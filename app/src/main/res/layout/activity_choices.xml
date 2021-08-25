@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.activities.ChoicesActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/tb_choices_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/colorInvisible"
+        android:layout_marginTop="@dimen/toolbar_margin_from_top"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginStart="@dimen/toolbar_margin_from_start"
+        android:layout_marginLeft="@dimen/toolbar_margin_from_start" />
+
+    <com.example.scoreup.utils.SUTextViewHeading
+        android:id="@+id/tv_choices_heading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_from_toolbar"
+        android:text="@string/choices_heading_text"
+        android:textColor="@color/colorThemeSecondaryText"
+        android:textSize="@dimen/title_text_size_choices"
+        android:paddingHorizontal="30dp"
+        android:gravity="center"
+        app:layout_constraintBottom_toTopOf="@id/sv_choices_columns"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tb_choices_back" />
+
+    <ScrollView
+        android:id="@+id/sv_choices_columns"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        app:layout_constraintTop_toBottomOf="@id/tv_choices_heading"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/ll_choices_first_column"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_from_other_entries"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toStartOf="@id/ll_choices_second_column"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <com.example.scoreup.utils.SUCheckBoxRegular
+                    android:id="@+id/cb_choices_basketball"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/bottom_margin_each_choice"
+                    android:text="@string/choices_basketball_text"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="@dimen/choices_textSize"
+                    android:textStyle="bold" />
+
+                <com.example.scoreup.utils.SUCheckBoxRegular
+                    android:id="@+id/cb_choices_badminton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/bottom_margin_each_choice"
+                    android:text="@string/choices_badminton_text"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="@dimen/choices_textSize"
+                    android:textStyle="bold" />
+
+                <com.example.scoreup.utils.SUCheckBoxRegular
+                    android:id="@+id/cb_choices_swimming"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/bottom_margin_each_choice"
+                    android:text="@string/choices_swimming_text"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="@dimen/choices_textSize"
+                    android:textStyle="bold" />
+
+                <com.example.scoreup.utils.SUCheckBoxRegular
+                    android:id="@+id/cb_choices_tennis"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/bottom_margin_each_choice"
+                    android:text="@string/choices_tennis_text"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="@dimen/choices_textSize"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_choices_second_column"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_from_other_entries"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/ll_choices_first_column"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <com.example.scoreup.utils.SUCheckBoxRegular
+                    android:id="@+id/cb_choices_cricket"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/bottom_margin_each_choice"
+                    android:text="@string/choices_cricket_text"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="@dimen/choices_textSize"
+                    android:textStyle="bold" />
+
+                <com.example.scoreup.utils.SUCheckBoxRegular
+                    android:id="@+id/cb_choices_football"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/bottom_margin_each_choice"
+                    android:text="@string/choices_football_text"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="@dimen/choices_textSize"
+                    android:textStyle="bold" />
+
+                <com.example.scoreup.utils.SUCheckBoxRegular
+                    android:id="@+id/cb_choices_table_tennis"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/bottom_margin_each_choice"
+                    android:text="@string/choices_table_tennis_text"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="@dimen/choices_textSize"
+                    android:textStyle="bold" />
+
+                <com.example.scoreup.utils.SUCheckBoxRegular
+                    android:id="@+id/cb_choices_ice_hockey"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/bottom_margin_each_choice"
+                    android:text="@string/choices_ice_hockey_text"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="@dimen/choices_textSize"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+
+    <com.example.scoreup.utils.SUButtonBold
+        android:id="@+id/btn_choices_save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/button_background_1"
+        android:text="@string/save_text"
+        android:textAllCaps="false"
+        android:textColor="@color/colorWhite"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_bias="0.9"
+        android:textSize="@dimen/btn_text_size_medium"
+        android:paddingHorizontal="50dp"
+        android:paddingVertical="10dp"
+        app:layout_constraintTop_toBottomOf="@id/sv_choices_columns" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
